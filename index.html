@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <style>
+        body{
+    padding:0px;
+    margin: 0px;
+    background-color: #000000;
+    width:100%;
+    height:100vh;
+}
+.wrapper{
+    position: relative;
+    top:46%;
+    left:27.4%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+button{
+    width:200px;
+    height:70px;
+    background: linear-gradient(to left top, #241385 50%, #241385 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #ffd500);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #ffd500);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #ffd500);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #ffd500);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
+
+h1 {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    
+}
+
+.wrap {
+    position: relative;
+    top:65%;
+    left:27.3%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.wra {
+    position: relative;
+    top:40%;
+    left:27.3%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.ra {
+    position: relative;
+    top:-2%;
+    left:27.3%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.rar {
+    position: relative;
+    top:-57%;
+    left:43.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.rare {
+    position: relative;
+    top:-53%;
+    left:43.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.raro {
+    position: relative;
+    top:-79%;
+    left:59.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.rap {
+    position: relative;
+    top:-75%;
+    left:59.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.rapo {
+    position: relative;
+    top:-26.8%;
+    left:79.3%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.gay {
+    position: relative;
+    top:-58.89%;
+    left:79.3%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.lol {
+    position: relative;
+    top:-70%;
+    left:96%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+
+.pelon {
+    position: relative;
+    top:-60%;
+    left:100%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+
+.pilin {
+    position: relative;
+    top:-30%;
+    left:27.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.lin {
+    position: relative;
+    top:-41%;
+    left:43.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+
+.lino {
+    position: relative;
+    top:-51.5%;
+    left:59.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+
+.rew {
+    position: relative;
+    top:-15%;
+    left:43.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.qwe {
+    position: relative;
+    top:-56.5%;
+    left:43.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+
+.asd {
+    position: relative;
+    top:-81%;
+    left:59.5%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+    </style>
+</head>
+<body>
+     
+   <h1>Programas del proyecto 8</h1>
+
+    <div class="wrapper">
+      <a href="7.html"><button>
+          Video 7
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </a>
+      </div>
+
+    <div class="wrap">
+        <a href="13.html"><button>
+                Video 13
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+  
+    <div class="wra">
+        <a href="10.html"><button>
+                Video 10
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="ra">
+        <a href="4.html"><button>
+                Video 4
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="pilin">
+        <a href="1.html"><button>
+                Video 1
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="lin">
+        <a href="2.html"><button>
+                Video 2
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="lino">
+        <a href="3.html"><button>
+                Video 3
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+
+    <div class="rew">
+        <a href="11.html"><button>
+                Video 11
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    
+
+    <div class="rar">
+        <a href="5.html"><button>
+                Video 5
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="rare">
+        <a href="8.html"><button>
+                Video 8
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="raro">
+        <a href="6.html"><button>
+                Video 6
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="rap">
+        <a href="9.html"><button>
+                Video 9
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="qwe">
+        <a href="14.html"><button>
+                Video 14
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+    </div>
+    <div class="asd">
+        <a href="12.html"><button>
+                Video 12
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </a>
+   
+</body>
+</html>
